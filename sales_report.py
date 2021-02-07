@@ -4,6 +4,7 @@
 salespeople = []
 melons_sold = []
 # empty list for salespeople and melons_sold
+# IMPROVEMENT: can use a empty dictionary instead
 
 f = open('sales-report.txt')
 # sets a variable, f, that opens the text file, sales-report.txt
@@ -19,7 +20,8 @@ for line in f:
     # set salesperson to the value of entries at index 0
     melons = int(entries[2])
     # set melons to an integer conversion of entries at index 2
-
+    # IMPROVEMENT: will not need lines 19-22 if a dictionary is used
+    
     if salesperson in salespeople:
     # if salesperson is in the list salespeople
         position = salespeople.index(salesperson)
